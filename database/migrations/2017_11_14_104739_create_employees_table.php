@@ -19,11 +19,11 @@ class CreateEmployeesTable extends Migration
             $table->string('firstname', 100);
             $table->string('otchestvo', 100);
             $table->integer('post_id')->unsigned(); //должность
-			$table->integer('department_id')->unsigned(); //отдел
-			$table->dateTime('employment date'); //дата приема на работу
+			$table->integer('department_number')->unsigned(); //отдел
+			$table->dateTime('employment_date'); //дата приема на работу
             $table->dateTime('birthday'); //день рождения
-            $table->string('phone',20);
-            $table->string('address',100);
+            $table->string('phone',100);
+            $table->string('address',200);
             $table->timestamps();
         });
     }

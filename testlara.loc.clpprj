@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="D:\OpenServer\domains\testlara.loc\testlara.loc.clpprj">
 	<settings><PM_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_URL><PM_HOME_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
-		<file name="D:\OpenServer\domains\testlara.loc\routes\web.php"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_104620_create_posts_table.php"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\PostsTableSeeding.php"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\DepartmentsTableSeeding.php"/>
 	</lastopfiles>
 	<errors version="5.11">
 		<errfile name="D:\OpenServer\domains\testlara.loc\vendor\webmozart\assert\src\Assert.php">
@@ -5546,14 +5548,14 @@
 		<file name="D:\OpenServer\domains\testlara.loc\vendor\doctrine\inflector\lib\Doctrine\Common\Inflector\Inflector.php" crc="1509620990"/>
 		<file name="D:\OpenServer\domains\testlara.loc\vendor\dnoegel\php-xdg-base-dir\tests\XdgTest.php" crc="1509621064"/>
 		<file name="D:\OpenServer\domains\testlara.loc\vendor\dnoegel\php-xdg-base-dir\src\Xdg.php" crc="1509621064"/>
-		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\ClassLoader.php" crc="1509624413"/>
-		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_static.php" crc="1509624413"/>
-		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_real.php" crc="1509624413"/>
-		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_psr4.php" crc="1509624413"/>
-		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_namespaces.php" crc="1509624412"/>
-		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_files.php" crc="1509624413"/>
-		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_classmap.php" crc="1509624413"/>
-		<file name="D:\OpenServer\domains\testlara.loc\vendor\autoload.php" crc="1509624413"/>
+		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\ClassLoader.php" crc="1510658473"/>
+		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_static.php" crc="1510658473"/>
+		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_real.php" crc="1510658473"/>
+		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_psr4.php" crc="1510658473"/>
+		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_namespaces.php" crc="1510658473"/>
+		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_files.php" crc="1510658473"/>
+		<file name="D:\OpenServer\domains\testlara.loc\vendor\composer\autoload_classmap.php" crc="1510658473"/>
+		<file name="D:\OpenServer\domains\testlara.loc\vendor\autoload.php" crc="1510658473"/>
 		<file name="D:\OpenServer\domains\testlara.loc\tests\Unit\ExampleTest.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\tests\Feature\ExampleTest.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\tests\TestCase.php" crc="1509620987"/>
@@ -5577,7 +5579,14 @@
 		<file name="D:\OpenServer\domains\testlara.loc\public\robots.txt" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\public\index.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\public\.htaccess" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\DatabaseSeeder.php" crc="1509620987"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\PostsTableSeeding.php" crc="1510666600"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\EmployeesTableSeeding.php" crc="1510658469"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\DepartmentsTableSeeding.php" crc="1510667012"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\DatabaseSeeder.php" crc="1510662751"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_111528_foreingkey_employees_table.php" crc="1510658255"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_104954_create_departments_table.php" crc="1510663192"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_104739_create_employees_table.php" crc="1510657660"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_104620_create_posts_table.php" crc="1510656765"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2014_10_12_100000_create_password_resets_table.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2014_10_12_000000_create_users_table.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\factories\UserFactory.php" crc="1509620987"/>
@@ -5592,12 +5601,14 @@
 		<file name="D:\OpenServer\domains\testlara.loc\config\broadcasting.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\config\auth.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\config\app.php" crc="1509620987"/>
+		<file name="D:\OpenServer\domains\testlara.loc\bootstrap\cache\services.php" crc="1510659730"/>
+		<file name="D:\OpenServer\domains\testlara.loc\bootstrap\cache\packages.php" crc="1510659730"/>
 		<file name="D:\OpenServer\domains\testlara.loc\bootstrap\app.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\RouteServiceProvider.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\EventServiceProvider.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\BroadcastServiceProvider.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\AuthServiceProvider.php" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\AppServiceProvider.php" crc="1509620987"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\AppServiceProvider.php" crc="1510658005"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Middleware\VerifyCsrfToken.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Middleware\TrustProxies.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Middleware\TrimStrings.php" crc="1509620987"/>
@@ -5612,6 +5623,9 @@
 		<file name="D:\OpenServer\domains\testlara.loc\app\Exceptions\Handler.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Console\Kernel.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\User.php" crc="1509620987"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Post.php" crc="1510666076"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Employee.php" crc="1510666126"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Department.php" crc="1510666102"/>
 		<file name="D:\OpenServer\domains\testlara.loc\webpack.mix.js" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\server.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\phpunit.xml" crc="1509620987"/>

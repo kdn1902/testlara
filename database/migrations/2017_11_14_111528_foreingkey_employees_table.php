@@ -15,7 +15,7 @@ class ForeingkeyEmployeesTable extends Migration
     {
         Schema::table('employees', function (Blueprint $table) {
             $table->foreign('post_id')->references('id')->on('posts');
-			$table->foreign('department_id')->references('id')->on('departments');
+			$table->foreign('department_number')->references('department_number')->on('departments');
         });
     }
 
@@ -28,7 +28,7 @@ class ForeingkeyEmployeesTable extends Migration
     {
         Schema::table('employees', function (Blueprint $table) {
 			$table->dropForeign('post_id');
-			$table->dropForeign('department_id');
+			$table->dropForeign('department_number');
         });
     }
 }

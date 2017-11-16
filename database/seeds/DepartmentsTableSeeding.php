@@ -31,10 +31,10 @@ class DepartmentsTableSeeding extends Seeder
              Department::create(['name' => 'Отдел IP телефонии','department_number'=>10006,'department_parent'=>1002]);
              Department::create(['name' => 'Отдел мониторинга серверов','department_number'=>10007,'department_parent'=>1003]);
              Department::create(['name' => 'Отдел мониторинга ЛВС','department_number'=>10008,'department_parent'=>1003]);
-             Department::create(['name' => 'Отдел поддержки оргтехники','department_number'=>10007,'department_parent'=>1004]);
-             Department::create(['name' => 'Отдел поддержки пользователей','department_number'=>10008,'department_parent'=>1004]);
-             Department::create(['name' => 'Отдел серверов','department_number'=>10009,'department_parent'=>1005]);
-             Department::create(['name' => 'Отдел интернет технологий','department_number'=>10010,'department_parent'=>1005]);
+             Department::create(['name' => 'Отдел поддержки оргтехники','department_number'=>10009,'department_parent'=>1004]);
+             Department::create(['name' => 'Отдел поддержки пользователей','department_number'=>10010,'department_parent'=>1004]);
+             Department::create(['name' => 'Отдел серверов','department_number'=>10011,'department_parent'=>1005]);
+             Department::create(['name' => 'Отдел интернет технологий','department_number'=>10012,'department_parent'=>1005]);
                           
              Department::create(['name' => 'Юридический департамент','department_number'=>20,'department_parent'=>1]);
              Department::create(['name' => 'Юридический отдел','department_number'=>201,'department_parent'=>20]);
