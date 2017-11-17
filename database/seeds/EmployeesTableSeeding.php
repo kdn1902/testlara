@@ -26,7 +26,7 @@ class EmployeesTableSeeding extends Seeder
 						  'firstname' => $this->name_mas[array_rand($this->name_mas)],
 						  'otchestvo' => $this->otchestvo_mas[array_rand($this->otchestvo_mas)],
 						  'post_id' => $i,  
-						  'department_number' => 1,
+						  'department_number' => $i,
 						  'employment_date' => $faker->dateTimeBetween('-5 years'),
 						  'birthday' => $faker->dateTimeBetween('-55 years', '-20 years'),
 						  'phone' => $faker->phoneNumber,

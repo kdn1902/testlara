@@ -1,13 +1,6 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Dimon Example Component</div>
-
-                    <div class="panel-body">
-                        I'm an example component!
-                     <address>
+<div>
+                    <address>
  						 <strong>Twitter, Inc.</strong><br>
 					 	 795 Folsom Ave, Suite 600<br>
  						 San Francisco, CA 94107<br>
@@ -19,8 +12,6 @@
 					  <a href="mailto:#">first.last@example.com</a>
 					</address>
 					<button type="button" class="btn btn-default">Default</button>
-
-					<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 					<button type="button" class="btn btn-primary">Primary</button>
 
 					<!-- Indicates a successful or positive action -->
@@ -37,11 +28,7 @@
 
 					<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 					<button type="button" class="btn btn-link">Ссылка</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 </template>
 
 <script>

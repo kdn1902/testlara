@@ -42775,19 +42775,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -42810,83 +42797,64 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
-          _c("div", { staticClass: "panel panel-default" }, [
-            _c("div", { staticClass: "panel-heading" }, [
-              _vm._v("Dimon Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "panel-body" }, [
-              _vm._v(
-                "\n                        I'm an example component!\n                     "
-              ),
-              _c("address", [
-                _c("strong", [_vm._v("Twitter, Inc.")]),
-                _c("br"),
-                _vm._v("\n\t\t\t\t\t \t 795 Folsom Ave, Suite 600"),
-                _c("br"),
-                _vm._v("\n \t\t\t\t\t\t San Francisco, CA 94107"),
-                _c("br"),
-                _vm._v(" "),
-                _c("abbr", { attrs: { title: "Phone" } }, [_vm._v("P:")]),
-                _vm._v(" (123) 456-7890\n\t\t\t\t\t")
-              ]),
-              _vm._v(" "),
-              _c("address", [
-                _c("strong", [_vm._v("Full Name")]),
-                _c("br"),
-                _vm._v(" "),
-                _c("a", { attrs: { href: "mailto:#" } }, [
-                  _vm._v("first.last@example.com")
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                { staticClass: "btn btn-default", attrs: { type: "button" } },
-                [_vm._v("Default")]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                { staticClass: "btn btn-primary", attrs: { type: "button" } },
-                [_vm._v("Primary")]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                { staticClass: "btn btn-success", attrs: { type: "button" } },
-                [_vm._v("Success")]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                { staticClass: "btn btn-info", attrs: { type: "button" } },
-                [_vm._v("Info")]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                { staticClass: "btn btn-warning", attrs: { type: "button" } },
-                [_vm._v("Warning")]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                { staticClass: "btn btn-danger", attrs: { type: "button" } },
-                [_vm._v("Danger")]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                { staticClass: "btn btn-link", attrs: { type: "button" } },
-                [_vm._v("Ссылка")]
-              )
-            ])
-          ])
+    return _c("div", [
+      _c("address", [
+        _c("strong", [_vm._v("Twitter, Inc.")]),
+        _c("br"),
+        _vm._v("\n\t\t\t\t\t \t 795 Folsom Ave, Suite 600"),
+        _c("br"),
+        _vm._v("\n \t\t\t\t\t\t San Francisco, CA 94107"),
+        _c("br"),
+        _vm._v(" "),
+        _c("abbr", { attrs: { title: "Phone" } }, [_vm._v("P:")]),
+        _vm._v(" (123) 456-7890\n\t\t\t\t\t")
+      ]),
+      _vm._v(" "),
+      _c("address", [
+        _c("strong", [_vm._v("Full Name")]),
+        _c("br"),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "mailto:#" } }, [
+          _vm._v("first.last@example.com")
         ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-default", attrs: { type: "button" } },
+        [_vm._v("Default")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "button" } },
+        [_vm._v("Primary")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-success", attrs: { type: "button" } },
+        [_vm._v("Success")]
+      ),
+      _vm._v(" "),
+      _c("button", { staticClass: "btn btn-info", attrs: { type: "button" } }, [
+        _vm._v("Info")
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-warning", attrs: { type: "button" } },
+        [_vm._v("Warning")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-danger", attrs: { type: "button" } },
+        [_vm._v("Danger")]
+      ),
+      _vm._v(" "),
+      _c("button", { staticClass: "btn btn-link", attrs: { type: "button" } }, [
+        _vm._v("Ссылка")
       ])
     ])
   }
