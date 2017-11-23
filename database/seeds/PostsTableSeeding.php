@@ -18,5 +18,6 @@ class PostsTableSeeding extends Seeder
              Post::create(['name' => 'Директор департамента','salary' => 800]);
              Post::create(['name' => 'Начальник отдела','salary' => 700]);
              Post::create(['name' => 'Специалист отдела','salary' => 500]);
+             Post::create(['name' => 'Секретарь-референт','salary' => 300]);
     }
 }

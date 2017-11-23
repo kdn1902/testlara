@@ -2,7 +2,11 @@
 <project name="D:\OpenServer\domains\testlara.loc\testlara.loc.clpprj">
 	<settings><PM_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_URL><PM_HOME_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
 		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\DatabaseSeeder.php"/>
-		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\EmployeesTableSeeding.php"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\DepartmentsTableSeeding.php"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\PostsTableSeeding.php"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\views\layouts\index.blade.php"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\components\ExampleComponent.vue"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\IndexController.php"/>
 	</lastopfiles>
 	<errors version="5.11">
 	</errors>
@@ -6283,15 +6287,18 @@
 		<file name="D:\OpenServer\domains\testlara.loc\tests\Feature\ExampleTest.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\tests\TestCase.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\tests\CreatesApplication.php" crc="1509620987"/>
+		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\f973b95bd5cddc592de6dd44eaafef2a2e739f5a.php" crc="1511421632"/>
+		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\d0f934f1407f71f7f8aad7a06be3eaff85efdfa2.php" crc="1510920516"/>
 		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\a12237b24a81d5b44d16fb32ef8d5b10fba80728.php" crc="1510839062"/>
 		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\8aad670f85ae34e6d75e5499161e01bb49ad10c2.php" crc="1509621320"/>
 		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\0afc08de28f3a7c10830dbe2f812c3f8258ad6b2.php" crc="1510839061"/>
-		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\095fc09f135b0f7f28ece4815661abcbb2af8cca.php" crc="1510840346"/>
+		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\095fc09f135b0f7f28ece4815661abcbb2af8cca.php" crc="1510920277"/>
 		<file name="D:\OpenServer\domains\testlara.loc\routes\web.php" crc="1510838578"/>
 		<file name="D:\OpenServer\domains\testlara.loc\routes\console.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\routes\channels.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\routes\api.php" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\index.blade.php" crc="1510840329"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\views\layouts\index.blade.php" crc="1510921502"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\app.blade.php" crc="1510920272"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\views\welcome.blade.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\lang\en\validation.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\lang\en\passwords.php" crc="1509620987"/>
@@ -6299,13 +6306,13 @@
 		<file name="D:\OpenServer\domains\testlara.loc\resources\lang\en\auth.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\sass\app.scss" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\sass\_variables.scss" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\components\ExampleComponent.vue" crc="1510840440"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\components\ExampleComponent.vue" crc="1510920198"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\bootstrap.js" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\app.js" crc="1510838988"/>
-		<file name="D:\OpenServer\domains\testlara.loc\public\js\app.js" crc="1510840438"/>
-		<file name="D:\OpenServer\domains\testlara.loc\public\css\app.css" crc="1510840442"/>
+		<file name="D:\OpenServer\domains\testlara.loc\public\js\app.js" crc="1510920199"/>
+		<file name="D:\OpenServer\domains\testlara.loc\public\css\app.css" crc="1510920199"/>
 		<file name="D:\OpenServer\domains\testlara.loc\public\robots.txt" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\public\mix-manifest.json" crc="1510840442"/>
+		<file name="D:\OpenServer\domains\testlara.loc\public\mix-manifest.json" crc="1510920199"/>
 		<file name="D:\OpenServer\domains\testlara.loc\public\index.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\public\.htaccess" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\yauzl\package.json" crc="1510837585"/>
@@ -19566,8 +19573,8 @@
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\abbrev\abbrev.js" crc="1510837575"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\.bin\sha.js" crc="1510837745"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\PostsTableSeeding.php" crc="1510666600"/>
-		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\EmployeesTableSeeding.php" crc="1510915194"/>
-		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\DepartmentsTableSeeding.php" crc="1510826520"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\EmployeesTableSeeding.php" crc="1510918338"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\DepartmentsTableSeeding.php" crc="1510917059"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\DatabaseSeeder.php" crc="1510830166"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_111528_foreingkey_employees_table.php" crc="1510824930"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_104954_create_departments_table.php" crc="1510826372"/>
@@ -19604,7 +19611,7 @@
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\Auth\RegisterController.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\Auth\LoginController.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\Auth\ForgotPasswordController.php" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\IndexController.php" crc="1510838485"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\IndexController.php" crc="1510920460"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\Controller.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Kernel.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Exceptions\Handler.php" crc="1509620987"/>

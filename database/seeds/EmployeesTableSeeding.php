@@ -19,9 +19,9 @@ class EmployeesTableSeeding extends Seeder
     {
         $faker = Faker\Factory::create();
   		
-  		//Директора
 		for ($i = 1; $i < 4; $i++)
 		{
+			//Директора
 			Employee::create(['lastname' => $this->family_mas[array_rand($this->family_mas)],
 						  'firstname' => $this->name_mas[array_rand($this->name_mas)],
 						  'otchestvo' => $this->otchestvo_mas[array_rand($this->otchestvo_mas)],
@@ -31,6 +31,17 @@ class EmployeesTableSeeding extends Seeder
 						  'birthday' => $faker->dateTimeBetween('-55 years', '-20 years'),
 						  'phone' => $faker->phoneNumber,
 						  'address' => $faker->address]);
+			//Секретари директоров
+  			Employee::create(['lastname' => $this->family_mas[array_rand($this->family_mas)],
+						  'firstname' => $this->name_mas[array_rand($this->name_mas)],
+						  'otchestvo' => $this->otchestvo_mas[array_rand($this->otchestvo_mas)],
+						  'post_id' => 7,  
+						  'department_number' => $i,
+						  'employment_date' => $faker->dateTimeBetween('-5 years'),
+						  'birthday' => $faker->dateTimeBetween('-55 years', '-20 years'),
+						  'phone' => $faker->phoneNumber,
+						  'address' => $faker->address]);
+
 		}
 
 		//Директора департаментов
@@ -51,6 +62,17 @@ class EmployeesTableSeeding extends Seeder
 						  'birthday' => $faker->dateTimeBetween('-55 years', '-20 years'),
 						  'phone' => $faker->phoneNumber,
 						  'address' => $faker->address]);
+
+  			Employee::create(['lastname' => $this->family_mas[array_rand($this->family_mas)],
+						  'firstname' => $this->name_mas[array_rand($this->name_mas)],
+						  'otchestvo' => $this->otchestvo_mas[array_rand($this->otchestvo_mas)],
+						  'post_id' => 7,  //Это секретари директоров департаментов 
+						  'department_number' => $result->department_number,
+						  'employment_date' => $faker->dateTimeBetween('-5 years'),
+						  'birthday' => $faker->dateTimeBetween('-55 years', '-20 years'),
+						  'phone' => $faker->phoneNumber,
+						  'address' => $faker->address]);
+
 		}
 		
 		//Начальники отделов в середине иерархии
@@ -92,7 +114,7 @@ class EmployeesTableSeeding extends Seeder
 						  'phone' => $faker->phoneNumber,
 						  'address' => $faker->address]);
 		}
-        for ($i=1; $i < 50000; $i++)
+        for ($i=1; $i < 10; $i++)
         {
 			Employee::create(['lastname' => $this->family_mas[array_rand($this->family_mas)],
 						  'firstname' => $this->name_mas[array_rand($this->name_mas)],
@@ -104,5 +126,7 @@ class EmployeesTableSeeding extends Seeder
 						  'phone' => $faker->phoneNumber,
 						  'address' => $faker->address]);
 		}
+		
     }
+    
 }
