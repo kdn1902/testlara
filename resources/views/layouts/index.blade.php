@@ -9,8 +9,7 @@
     <!-- Bootstrap -->
     <link href="/css/app.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.4/jstree.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.4/themes/default/style.min.css" />-->
+
     @yield('styles')	
 	
 
@@ -30,8 +29,8 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-main">
       <ul class="nav navbar-nav">
-        <li><a href="/">1</a></li>
-        <li><a href="/">2</a></li>
+        <li><a href="/">Дерево сотрудников</a></li>
+        <li><a href="/employees">Список сотрудников</a></li>
         <li><a href="/">3</a></li>
         <li><a href="/">4</a></li>
         <li><a href="/">5</a></li>
@@ -40,7 +39,7 @@
   </div>
 </nav>
 
-   <div class="container">
+   <div class="container-fluid">
             @yield('content')
    </div>
 

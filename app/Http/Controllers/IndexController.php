@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     //
-    public function index()
+   
+    public function index($pid = 0)
     {
-		 return view('index.app');
+		return view('index.app');
 	}
 }

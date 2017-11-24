@@ -11,11 +11,8 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
-
 Route::get('/', 'IndexController@index');
+Route::get('/employees', 'EmployeesController@index');
 
 Route::get('/about', function () {
     return view('welcome');
