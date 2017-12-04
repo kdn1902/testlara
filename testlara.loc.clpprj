@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="D:\OpenServer\domains\testlara.loc\testlara.loc.clpprj">
-	<settings><PM_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_URL><PM_HOME_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
-		<file name="D:\OpenServer\domains\testlara.loc\app\MyFunctions.php"/>
-		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\IndexController.php"/>
+	<settings><PM_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_URL><PM_HOME_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";D:\OpenServer\domains\testlara.loc\app\Contracts;D:\OpenServer\domains\testlara.loc\app\folder0;"/><added value=""/><lastopfiles>
+		<file name="D:\OpenServer\domains\testlara.loc\routes\web.php"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\employees.blade.php"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\app.js"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\AjaxController.php"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\EloquentVueTables.php"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_111528_foreingkey_employees_table.php"/>
 	</lastopfiles>
 	<errors version="5.11">
 	</errors>
@@ -38,6 +42,7 @@
 		<facade class="Validator" name="validator"/>
 		<facade class="View" name="view"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\AppServiceProvider.php">
+			<type name="MyFunctions" class="\App\MyFunctions"/>
 			<type name="MyFunctions" class="\App\MyFunctions"/>
 			<type name="MyFunctions" class="\App\MyFunctions"/>
 		</file>
@@ -718,6 +723,9 @@
 		</todofile>
 		<todofile name="D:\OpenServer\domains\testlara.loc\node_modules\vm-browserify\example\run\bundle.js">
 			<todo name="TODO: make this comparison case-insensitive on windows?" pos="3;328"/>
+		</todofile>
+		<todofile name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\v-client-table.js">
+			<todo name="TODO: Custom Queries" pos="9;151"/>
 		</todofile>
 		<todofile name="D:\OpenServer\domains\testlara.loc\node_modules\vue-template-es2015-compiler\buble.js">
 			<todo name="TODO is this block necessary?..." pos="4;4660"/>
@@ -6287,14 +6295,18 @@
 		<file name="D:\OpenServer\domains\testlara.loc\tests\Feature\ExampleTest.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\tests\TestCase.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\tests\CreatesApplication.php" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\f973b95bd5cddc592de6dd44eaafef2a2e739f5a.php" crc="1511442745"/>
-		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\d0f934f1407f71f7f8aad7a06be3eaff85efdfa2.php" crc="1511442745"/>
-		<file name="D:\OpenServer\domains\testlara.loc\routes\web.php" crc="1510838578"/>
+		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\f973b95bd5cddc592de6dd44eaafef2a2e739f5a.php" crc="1512110253"/>
+		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\d0f934f1407f71f7f8aad7a06be3eaff85efdfa2.php" crc="1511521541"/>
+		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\a2adad2456e57d4cd43176f0e632cfe0ab139fdb.php" crc="1512124095"/>
+		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\a12237b24a81d5b44d16fb32ef8d5b10fba80728.php" crc="1511530006"/>
+		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\0afc08de28f3a7c10830dbe2f812c3f8258ad6b2.php" crc="1511530006"/>
+		<file name="D:\OpenServer\domains\testlara.loc\routes\web.php" crc="1512131142"/>
 		<file name="D:\OpenServer\domains\testlara.loc\routes\console.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\routes\channels.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\routes\api.php" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\resources\views\layouts\index.blade.php" crc="1511442741"/>
-		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\app.blade.php" crc="1511442706"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\views\layouts\index.blade.php" crc="1512110232"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\employees.blade.php" crc="1512123999"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\app.blade.php" crc="1511521536"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\views\welcome.blade.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\lang\en\validation.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\lang\en\passwords.php" crc="1509620987"/>
@@ -6304,11 +6316,11 @@
 		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\sass\_variables.scss" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\components\ExampleComponent.vue" crc="1510920198"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\bootstrap.js" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\app.js" crc="1510838988"/>
-		<file name="D:\OpenServer\domains\testlara.loc\public\js\app.js" crc="1510920199"/>
-		<file name="D:\OpenServer\domains\testlara.loc\public\css\app.css" crc="1510920199"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\app.js" crc="1512125112"/>
+		<file name="D:\OpenServer\domains\testlara.loc\public\js\app.js" crc="1512125112"/>
+		<file name="D:\OpenServer\domains\testlara.loc\public\css\app.css" crc="1512125112"/>
 		<file name="D:\OpenServer\domains\testlara.loc\public\robots.txt" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\public\mix-manifest.json" crc="1510920199"/>
+		<file name="D:\OpenServer\domains\testlara.loc\public\mix-manifest.json" crc="1512125112"/>
 		<file name="D:\OpenServer\domains\testlara.loc\public\index.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\public\.htaccess" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\yauzl\package.json" crc="1510837585"/>
@@ -6860,6 +6872,12 @@
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\watchpack\package.json" crc="1510837587"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\ware\lib\index.js" crc="1510837579"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\ware\package.json" crc="1510837583"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vuex\dist\vuex.min.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vuex\dist\vuex.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vuex\dist\vuex.esm.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vuex\dist\vuex.common.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vuex\dist\logger.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vuex\package.json" crc="1512031065"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-template-es2015-compiler\package.json" crc="1510837595"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-template-es2015-compiler\index.js" crc="1510837590"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-template-es2015-compiler\buble.js" crc="1510837588"/>
@@ -6867,11 +6885,170 @@
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-template-compiler\index.js" crc="1510837588"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-template-compiler\build.js" crc="1510837586"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-template-compiler\browser.js" crc="1510837581"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\node_modules\clone\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\node_modules\clone\clone.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\dist\vue-tables-2.min.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\text-filter.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\sort-control.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\rows.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\per-page.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\per-page-values.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\pagination.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\normal-filter.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\no-results.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\list-filter.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\headings.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\footer-headings.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\dropdown-pagination.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\dropdown-pagination-count.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\date-filter.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template\column-filters.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\state\vuex.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\state\state.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\state\register-module.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\state\normal.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\state\mutations.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\state\data.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\mixins\methods.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\mixins\directives.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\mixins\data.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\mixins\created.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\mixins\computed.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\update-state.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\transform-date-strings-to-moment.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\toggle-child-row.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\sortable.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\sortable-class.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\sortable-chevron-class.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\set-user-multi-sort.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\set-page.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\set-order.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\set-limit.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\set-filters-dom.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\set-filter.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\set-date-filter-text.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\set-data.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\server-search.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\send-request.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\row-was-clicked.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\render.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\register-server-filters.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\register-client-filters.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\refresh.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\order-by-column.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\is-text-filter.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\is-list-filter.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\is-date-filter.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\init-state.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\init-query.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\init-pagination.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\init-order-by.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\init-options.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\init-date-filters.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\init-custom-filters.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\highlight.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\has-date-filters.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\get-sort-fn.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\get-response-data.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\get-name.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\get-heading.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\get-heading-tooltip.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\get-data.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\get-child-row-template.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\filterable.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\display.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\dispatch.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\default-sort.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\currently-sorted.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\column-class.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\client-search.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\child-row-toggler-class.js" crc="1512031066"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\methods\apply-filters.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\helpers\ucfirst.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\helpers\object-keys.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\helpers\object-filled-keys-count.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\helpers\is-valid-moment-object.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\helpers\is-empty.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\helpers\array-intersection.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\helpers\array-diff.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\filters\set-count.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\filters\option-text.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\filters\highlight-matches.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\filters\format-date.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\filters\date.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\filters\custom-filters.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\directives\select.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\directives\input.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\config\defaults.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\total-pages.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\templates-keys.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\table-data.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\storage.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\q.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\opts.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\list-columns-object.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\has-child-row.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\filtered-data.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\filterable-columns.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\custom-q.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\computed\all-columns.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\v-server-table.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\v-client-table.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\template.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\table.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\index.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\compiled\bus.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-tables-2\package.json" crc="1512031066"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-style-loader\lib\listToStyles.js" crc="1510837589"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-style-loader\lib\addStylesServer.js" crc="1510837587"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-style-loader\lib\addStylesClient.js" crc="1510837585"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-style-loader\package.json" crc="1510837593"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-style-loader\index.js" crc="1510837576"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\test\data\valid.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\test\data\text.txt" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\test\data\invalid.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\test\webpack.config.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\test\url.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\test\specs.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\test\resource.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\test\promise.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\test\index.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\test\index.html" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\test\http.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\url\template.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\url\root.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\url\query.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\url\index.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\lib\url-template.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\lib\promise.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\interceptor\timeout.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\interceptor\method.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\interceptor\jsonp.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\interceptor\header.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\interceptor\cors.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\interceptor\body.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\interceptor\before.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\client\xhr.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\client\xdr.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\client\jsonp.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\client\index.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\response.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\request.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\http\index.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\util.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\resource.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\promise.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\src\index.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\dist\vue-resource.min.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\dist\vue-resource.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\dist\vue-resource.es2015.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\dist\vue-resource.common.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-resource\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-pagination-2\compiled\template.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-pagination-2\compiled\Pagination.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-pagination-2\compiled\bus.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-pagination-2\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-pagination-2\index.js" crc="1512031065"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-loader\lib\utils\try-require.js" crc="1510837601"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-loader\lib\utils\normalize.js" crc="1510837600"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\vue-loader\lib\template-compiler\modules\transform-srcset.js" crc="1510837598"/>
@@ -10756,6 +10933,10 @@
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\merge-stream\index.js" crc="1510837579"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\merge-descriptors\package.json" crc="1510837585"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\merge-descriptors\index.js" crc="1510837579"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\merge\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\merge\merge.min.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\merge\merge.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\merge\bower.json" crc="1512031065"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\meow\node_modules\minimist\test\whitespace.js" crc="1510837601"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\meow\node_modules\minimist\test\unknown.js" crc="1510837599"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\meow\node_modules\minimist\test\stop_early.js" crc="1510837598"/>
@@ -10819,6 +11000,10 @@
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\marked\.travis.yml" crc="1510837588"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\map-obj\package.json" crc="1510837583"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\map-obj\index.js" crc="1510837575"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\make-iterator\test.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\make-iterator\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\make-iterator\index.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\make-iterator\.travis.yml" crc="1512031065"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\make-dir\package.json" crc="1510837583"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\make-dir\index.js" crc="1510837576"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\macaddress\lib\windows.js" crc="1510837592"/>
@@ -12458,6 +12643,8 @@
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\indexes-of\test.js" crc="1510837582"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\indexes-of\package.json" crc="1510837586"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\indexes-of\index.js" crc="1510837580"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\index-of\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\index-of\index.js" crc="1512031065"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\indent-string\package.json" crc="1510837583"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\indent-string\index.js" crc="1510837576"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\in-publish\test\package.json" crc="1510837593"/>
@@ -12995,6 +13182,10 @@
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\find-cache-dir\index.js" crc="1510837576"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\finalhandler\package.json" crc="1510837585"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\finalhandler\index.js" crc="1510837579"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\filter-array\node_modules\kind-of\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\filter-array\node_modules\kind-of\index.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\filter-array\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\filter-array\index.js" crc="1512031065"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\fill-range\package.json" crc="1510837584"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\fill-range\index.js" crc="1510837579"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\filenamify\package.json" crc="1510837583"/>
@@ -14403,6 +14594,11 @@
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\debug\component.json" crc="1510837590"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\debug\.travis.yml" crc="1510837592"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\debug\.coveralls.yml" crc="1510837588"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\debounce\test.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\debounce\test.html" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\debounce\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\debounce\index.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\debounce\component.json" crc="1512031065"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\de-indent\test.js" crc="1510837579"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\de-indent\package.json" crc="1510837581"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\de-indent\index.js" crc="1510837578"/>
@@ -19336,6 +19532,10 @@
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-uniq\index.js" crc="1510837576"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-union\package.json" crc="1510837582"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-union\index.js" crc="1510837575"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-slice\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-slice\index.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-intersection\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-intersection\index.js" crc="1512031065"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-includes\test\tests.js" crc="1510837599"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-includes\test\shimmed.js" crc="1510837598"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-includes\test\index.js" crc="1510837597"/>
@@ -19350,10 +19550,16 @@
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-flatten\array-flatten.js" crc="1510837579"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-find-index\package.json" crc="1510837582"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-find-index\index.js" crc="1510837575"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-every\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-every\index.js" crc="1512031065"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-differ\package.json" crc="1510837580"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\array-differ\index.js" crc="1510837575"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\arr-flatten\package.json" crc="1510837583"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\arr-flatten\index.js" crc="1510837579"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\arr-filter\node_modules\make-iterator\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\arr-filter\node_modules\make-iterator\index.js" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\arr-filter\package.json" crc="1512031065"/>
+		<file name="D:\OpenServer\domains\testlara.loc\node_modules\arr-filter\index.js" crc="1512031065"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\arr-diff\package.json" crc="1510837583"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\arr-diff\index.js" crc="1510837579"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\argparse\lib\help\formatter.js" crc="1510837609"/>
@@ -19569,13 +19775,13 @@
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\abbrev\abbrev.js" crc="1510837575"/>
 		<file name="D:\OpenServer\domains\testlara.loc\node_modules\.bin\sha.js" crc="1510837745"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\PostsTableSeeding.php" crc="1511427201"/>
-		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\EmployeesTableSeeding.php" crc="1511441858"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\EmployeesTableSeeding.php" crc="1512123848"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\DepartmentsTableSeeding.php" crc="1510917059"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\seeds\DatabaseSeeder.php" crc="1510830166"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_111528_foreingkey_employees_table.php" crc="1510824930"/>
-		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_104954_create_departments_table.php" crc="1510826372"/>
-		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_104739_create_employees_table.php" crc="1510827801"/>
-		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_104620_create_posts_table.php" crc="1510656765"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_104954_create_departments_table.php" crc="1512035830"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_104739_create_employees_table.php" crc="1512123660"/>
+		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2017_11_14_104620_create_posts_table.php" crc="1512035830"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2014_10_12_100000_create_password_resets_table.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\migrations\2014_10_12_000000_create_users_table.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\database\factories\UserFactory.php" crc="1509620987"/>
@@ -19585,7 +19791,7 @@
 		<file name="D:\OpenServer\domains\testlara.loc\config\queue.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\config\mail.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\config\filesystems.php" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\config\database.php" crc="1509620987"/>
+		<file name="D:\OpenServer\domains\testlara.loc\config\database.php" crc="1512036657"/>
 		<file name="D:\OpenServer\domains\testlara.loc\config\cache.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\config\broadcasting.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\config\auth.php" crc="1509620987"/>
@@ -19597,7 +19803,7 @@
 		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\EventServiceProvider.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\BroadcastServiceProvider.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\AuthServiceProvider.php" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\AppServiceProvider.php" crc="1511435078"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Providers\AppServiceProvider.php" crc="1512116984"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Middleware\VerifyCsrfToken.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Middleware\TrustProxies.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Middleware\TrimStrings.php" crc="1509620987"/>
@@ -19607,16 +19813,19 @@
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\Auth\RegisterController.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\Auth\LoginController.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\Auth\ForgotPasswordController.php" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\IndexController.php" crc="1511446705"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\IndexController.php" crc="1511517230"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\EmployeesController.php" crc="1511525336"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\Controller.php" crc="1509620987"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Controllers\AjaxController.php" crc="1512129781"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Http\Kernel.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Exceptions\Handler.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\Console\Kernel.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\app\User.php" crc="1509620987"/>
-		<file name="D:\OpenServer\domains\testlara.loc\app\Post.php" crc="1510666076"/>
-		<file name="D:\OpenServer\domains\testlara.loc\app\MyFunctions.php" crc="1511445443"/>
-		<file name="D:\OpenServer\domains\testlara.loc\app\Employee.php" crc="1510666126"/>
-		<file name="D:\OpenServer\domains\testlara.loc\app\Department.php" crc="1510666102"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Post.php" crc="1512128984"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\MyFunctions.php" crc="1511524340"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Employee.php" crc="1512129736"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\EloquentVueTables.php" crc="1512117222"/>
+		<file name="D:\OpenServer\domains\testlara.loc\app\Department.php" crc="1512128664"/>
 		<file name="D:\OpenServer\domains\testlara.loc\webpack.mix.js" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\server.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\phpunit.xml" crc="1509620987"/>

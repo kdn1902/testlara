@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,6 +9,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Support\Facades\Input;
 
 Route::get('/', 'IndexController@index');
 Route::get('/employees', 'EmployeesController@index');
@@ -17,3 +17,13 @@ Route::get('/employees', 'EmployeesController@index');
 Route::get('/about', function () {
     return view('welcome');
 });
+
+Route::get('/getemployees','AjaxController@getemployees');
+Auth::routes();
+/*
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+*/

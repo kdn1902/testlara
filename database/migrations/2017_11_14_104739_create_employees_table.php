@@ -20,8 +20,8 @@ class CreateEmployeesTable extends Migration
             $table->string('otchestvo', 100);
             $table->integer('post_id')->unsigned(); //должность
 			$table->integer('department_number')->unsigned(); //отдел
-			$table->dateTime('employment_date'); //дата приема на работу
-            $table->dateTime('birthday'); //день рождения
+			$table->date('employment_date'); //дата приема на работу
+            $table->date('birthday'); //день рождения
             $table->string('phone',100);
             $table->string('address',200);
             $table->timestamps();

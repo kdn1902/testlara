@@ -6,15 +6,19 @@
                     <div class="panel panel-default">
                     <div class="panel-heading">Сотрудники</div>
                     <div class="panel-body">
-					<div id="employees">
-					  <form id="search">
-    						Поиск <input name="query" v-model="searchQuery">
-  					  </form>
-  				      <employees 
-  				        :data="gridData"
-    					:columns="gridColumns"
-    					:filter-key="searchQuery" >
-  			 		  </employees>
+					<div id="serverpeople">
+  							<v-server-table url="/getemployees" :columns="columns" :options="options">
+  							<template slot="id" slot-scope="props">
+    							<div>
+      								<a :href=getemployee(props.row.id)> @{{props.row.id}}</a>
+    							</div>
+    						</template>
+ 							<template slot="birthday" slot-scope="props">
+    							<div>
+      								@{{ getdate(props.row.birthday) }}
+    							</div>
+    						</template>
+  							</v-server-table>
 					</div>
                     </div>
                 </div>
@@ -24,21 +28,6 @@
 
 @section('scripts')
 <script src="/js/app.js"></script>
-<script>
-var demo = new Vue({
-  el: '#employees',
-  data: {
-    searchQuery: '',
-    gridColumns: ['Имя', 'Зарплата'],
-    gridData: [
-      { "Имя" : "Chuck Norris", "Зарплата" : "10000" },
-      { "Имя" : "Bruce Lee", "Зарплата" : "9000" },
-      { "Имя" : "Jackie Chan", "Зарплата" : "7000" },
-      { "Имя" : "Jet Li", "Зарплата" : "8000" }
-    ]
-  }
-})
-</script>
 @endsection
 
 @section('styles')
