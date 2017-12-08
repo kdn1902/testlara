@@ -38,7 +38,6 @@ new Vue({
               	otchestvo: 'Отчество',
               	birthday: 'День рождения'
             },
-            dateColumns: ['birthday'],
 			params: {
 				datefields: ['birthday']
 			},
@@ -64,3 +63,4 @@ new Vue({
 			}
     }
 });	
+

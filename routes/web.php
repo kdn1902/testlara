@@ -13,12 +13,13 @@ use Illuminate\Support\Facades\Input;
 
 Route::get('/', 'IndexController@index');
 Route::get('/employees', 'EmployeesController@index');
-
+Route::get('/employees', 'EmployeesController@index');
+Route::get('/getemployee/{id}', 'EmployeesController@getemployee')->middleware('auth');
 Route::get('/about', function () {
     return view('welcome');
 });
 
-Route::get('/getemployees','AjaxController@getemployees');
+// Route::get('/getemployees','AjaxController@getemployees');
 Auth::routes();
 /*
 Route::get('/home', 'HomeController@index')->name('home');

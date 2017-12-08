@@ -7,7 +7,7 @@
                     <div class="panel-heading">Сотрудники</div>
                     <div class="panel-body">
 					<div id="serverpeople">
-  							<v-server-table url="/getemployees" :columns="columns" :options="options">
+  							<v-server-table url="/api/getemployees" :columns="columns" :options="options">
   							<template slot="id" slot-scope="props">
     							<div>
       								<a :href=getemployee(props.row.id)> @{{props.row.id}}</a>

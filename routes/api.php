@@ -16,3 +16,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/getemployees','AjaxController@getemployees');
+Route::get('/getdepartments','AjaxController@getdepartments');
+Route::get('/getposts','AjaxController@getposts');

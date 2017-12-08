@@ -11,7 +11,7 @@ Class EloquentVueTables
     extract(Input::only('query', 'limit', 'page', 'orderBy', 'ascending', 'byColumn', 'datefields'));
     $data = $model->select($fields);
     if (isset($query) && $query) {
-     $data = $byColumn==1?$this->filterByColumn($data, $query):
+//     $data = $byColumn==1?$this->filterByColumn($data, $query):
      $this->filter($data, $query, $fields, $datefields);
    }
    $count = $data->count();
@@ -22,10 +22,10 @@ Class EloquentVueTables
     $data->orderBy($orderBy,$direction);
   endif;
   $results = $data->get()->toArray();
-  return ['data'=>$results,
-  'count'=>$count];
+  return ['data'=>$results, 'count'=>$count];
 }
 
+/*
 protected function filterByColumn($data, $query) {
   foreach ($query as $field=>$query):
     if (!$query) continue;
@@ -39,7 +39,7 @@ protected function filterByColumn($data, $query) {
 endforeach;
 return $data;
 }
-
+*/
 protected function filter($data, $query, $fields, $datefields) {
   foreach ($fields as $index=>$field):
     if( is_numeric($query) || (! in_array($field, $datefields)) )
