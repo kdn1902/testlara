@@ -7,12 +7,22 @@ use App\Employee;
 
 class EmployeesController extends Controller
 {
-    //
+/**
+* 
+* 
+* @return
+*/
     public function index()
     {
 		return view('index.employees');
 	}
 
+/**
+* 
+* @param undefined $id
+* 
+* @return
+*/
     public function getemployee($id) 
     {
     	$empl = Employee::find($id);
@@ -21,7 +31,8 @@ class EmployeesController extends Controller
     	$empl["post_id"] = $post->id;
     	$depart = Employee::find($id)->department;
     	$empl["department_name"] = $depart->name;
-    	$empl["department_id"] = $depart->id;
+    	$empl["department_number"] = $depart->department_number;
+    	$empl["status"] = "";
 		return view('index.employee',[ "empl" => $empl ]);
 	}
 

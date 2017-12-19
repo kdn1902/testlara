@@ -9,58 +9,18 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import VeeValidate from 'vee-validate';
+Vue.use(VeeValidate);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/ExampleComponent.vue'));
-
-
-const app = new Vue({
-    el: '#app'
-});
+Vue.component('mydatepicker', require('./components/MyDatepicker.vue'));
 
 import {ServerTable, ClientTable, Event} from 'vue-tables-2';
-import axios from 'axios'
+import axios from 'axios';
+
 Vue.use(ServerTable, {}, false, require('../../../node_modules/vue-tables-2/compiled/template.js')('server'))
-
-new Vue({
-    el: "#serverpeople",
-    data: {
-        columns: ['id', 'lastname', 'firstname', 'otchestvo','birthday'],
-        options: {
-        	headings:{
-        		id: '№',
-            	lastname: 'Фамилия',
-              	firstname: 'Имя',
-              	otchestvo: 'Отчество',
-              	birthday: 'День рождения'
-            },
-			params: {
-				datefields: ['birthday']
-			},
-        	requestFunction: function (data) 
-			{
-				return axios.get(this.url, {
-					params: data
-				}).catch(function (e){
-					this.dispatch('error', e);
-				}.bind(this));
-			}
-        }
-    },
-    methods:{
-			getemployee: function(id)
-			{
-				return "/getemployee/" + id;
-			},
-			getdate: function(ddate)
-			{
-				var d = new Date(ddate);
-				return d.toLocaleFormat('%d %b %Y')
-			}
-    }
-});	
-
