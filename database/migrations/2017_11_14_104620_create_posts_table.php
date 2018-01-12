@@ -17,6 +17,7 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->string('name', 100);
             $table->integer('salary');
+            $table->integer('post_priority');
             $table->timestamps();
         });
     }

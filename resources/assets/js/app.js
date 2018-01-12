@@ -19,6 +19,7 @@ Vue.use(VeeValidate);
  */
 
 Vue.component('mydatepicker', require('./components/MyDatepicker.vue'));
+Vue.component('post', require('./components/Post.vue'));
 
 import {ServerTable, ClientTable, Event} from 'vue-tables-2';
 import axios from 'axios';

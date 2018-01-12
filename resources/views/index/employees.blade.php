@@ -18,6 +18,10 @@
       								@{{ getdate(props.row.birthday) }}
     							</div>
     						</template>
+ 							<template slot="small_foto" slot-scope="props">
+ 								<template v-if="! has_foto(props.row.small_foto)">Нет фото</template>
+								<template v-else><img v-bind:src="get_small_foto_url(props.row.small_foto)"></img></template>	
+    						</template>
   							</v-server-table>
 					</div>
                     </div>
@@ -32,14 +36,15 @@
 	new Vue({
     el: "#serverpeople",
     data: {
-        columns: ['id', 'lastname', 'firstname', 'otchestvo','birthday'],
+        columns: ['id', 'lastname', 'firstname', 'otchestvo','birthday','small_foto'],
         options: {
         	headings:{
         		id: '№',
             	lastname: 'Фамилия',
               	firstname: 'Имя',
               	otchestvo: 'Отчество',
-              	birthday: 'День рождения'
+              	birthday: 'День рождения',
+              	small_foto: 'Фото'
             },
 			params: {
 				datefields: ['birthday']
@@ -52,7 +57,8 @@
 					this.dispatch('error', e);
 				}.bind(this));
 			}
-        }
+        },
+        
     },
     methods:{
 			getemployee: function(id)
@@ -63,6 +69,14 @@
 			{
 				var d = new Date(ddate);
 				return d.toLocaleFormat('%d %b %Y')
+			},
+			has_foto: function(small_foto)
+			{
+				return small_foto === null? false: true;
+			},
+			get_small_foto_url: function(small_foto)
+			{
+				return "/storage/" + small_foto;
 			}
     }
 });	

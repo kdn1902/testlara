@@ -3,24 +3,33 @@
 @section('content')
     <div id="empl">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                    <div class="panel panel-default">
-                    <div class="panel-heading">Сотрудник</div>
-                    <div class="panel-body">
-
-                    <p>@{{ status }}</p>
-                    <template v-if="err">
-                       <ul>
-                       		<li v-for="value in err">@{{ value[0] }}</li>	
+        	<div class="col-md-10 col-md-offset-1" v-if="status || err" >
+        	<div class="panel panel-default">        	
+               <div class="panel-body" >
+                       <p v-if="status" class="text-success">@{{ status }}</p>
+                       <ul v-if="err">
+                       		<li v-for="value in err"><p class="text-danger">@{{ value[0] }}</p></li>	
                        </ul>
-                    </template>
+        	    </div>
+        	</div>
+       		</div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-default">
+                    <div class="panel-heading">Сотрудник т.№ {{$empl["id"]}}
+                    		<div class="pull-right">
+                    			<button type="button" class="btn btn-primary btn-sm" @click.prevent="saveEmployee">Сохранить изменения</button>
+                    		</div>
+                    </div>
+                    <div class="panel-body">
                     <table class="table table-bordered">
-					<thead>
-						<th>№</th><th>Фамилия</th><th>Имя</th><th>Отчество</th><th>Должность</th><th>Отдел</th><th>Дата приема на работу</th></th><th>Дата рождения</th>
-						<th>Номер телефона</th><th>Адрес</th><th>Фото</th></th><th></th>
+   					<thead>
+						<th>Фамилия</th><th>Имя</th><th>Отчество</th><th>Дата рождения</th>
+						<th>Номер телефона</th><th>Адрес</th><th>Фото</th></th>
 					</thead>
 					<tr>
-					<td>{{$empl["id"]}}</td>
 					<td @click.self = "is_lastname_view = ! is_lastname_view; ">
 						<template v-if="is_lastname_view"  > @{{ lastname }} </template>
 						<template v-else><input v-focus class="form-control" v-model="lastname" @blur="is_lastname_view = true" @keyup.13 = "is_lastname_view = true" />
@@ -35,6 +44,43 @@
 						<template v-if="is_otchestvo_view"> @{{ otchestvo }} </template>
 						<template v-else><input  v-focus class="form-control" v-model="otchestvo"  @blur = "is_otchestvo_view = true" @keyup.13 = "is_otchestvo_view = true"/></template>
 					</td>
+					<td @click.self = "is_birthday_view = ! is_birthday_view">
+						<template v-if="is_birthday_view"> @{{ birthday }}</template>
+						<template v-else><mydatepicker :ddate="birthday" @changedate="changeBirthday"></mydatepicker></template>
+					</td>
+					<td @click.self = "is_phone_view = ! is_phone_view">
+						<template v-if="is_phone_view"> @{{ phone }} </template>
+						<template v-else><input  v-focus class="form-control" v-model="phone"  @blur = "is_phone_view = true" @keyup.13 = "is_phone_view = true"/></template>
+					</td>
+					<td @click.self = "is_address_view = ! is_address_view">
+						<template v-if="is_address_view"> @{{ address }} </template>
+						<template v-else><textarea  v-focus class="form-control" v-model="address" @blur = "is_address_view = true" @keyup.13 = "is_address_view = true" /></textarea></template>
+					</td>
+					<td>
+						<template v-if="! has_foto">Нет фото</template>
+						<template v-else>
+									<a data-toggle="modal" data-target="#bigFoto">
+								    <img v-bind:src="small_foto_url"></img></a>
+								    <button type="button" class="btn btn-danger btn-xs" @click="dropFoto">Удалить фото</button>
+						</template>	
+					</td>					
+					</tr>
+                    </table>
+                    </div>
+                    </div>
+            </div>
+        </div>
+                    
+
+         <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-default">
+                    <div class="panel-body">
+                    <table class="table table-bordered">
+   					<thead>
+						<th>Должность</th><th>Отдел</th><th>Дата приема на работу</th><th>Зарплата</th>
+					</thead>
+					<tr>
 					<td @click.self = "editPost">
 						<template v-if="is_post_name_view"> @{{ curr_post.name }} </template>
 						<template v-else>
@@ -60,51 +106,37 @@
 						<template v-if="is_employment_date_view"> @{{ employment_date }}</template>
 						<template v-else><mydatepicker :ddate="employment_date" @changedate="changeEmploymentDate"></mydatepicker></template>
 					</td>
-					
-					<td @click.self = "is_birthday_view = ! is_birthday_view">
-						<template v-if="is_birthday_view"> @{{ birthday }}</template>
-						<template v-else><mydatepicker :ddate="birthday" @changedate="changeBirthday"></mydatepicker></template>
-					</td>
-
-					<td @click.self = "is_phone_view = ! is_phone_view">
-						<template v-if="is_phone_view"> @{{ phone }} </template>
-						<template v-else><input  v-focus class="form-control" v-model="phone"  @blur = "is_phone_view = true" @keyup.13 = "is_phone_view = true"/></template>
-					</td>
-					<td @click.self = "is_address_view = ! is_address_view">
-						<template v-if="is_address_view"> @{{ address }} </template>
-						<template v-else><textarea  v-focus class="form-control" v-model="address" @blur = "is_address_view = true" @keyup.13 = "is_address_view = true" /></textarea></template>
-					</td>
 					<td>
-						<template v-if="! has_foto">Нет фото</template>
-						<template v-else>
-									<a data-toggle="modal" data-target="#bigFoto">
-								    <img v-bind:src="small_foto_url"></img></a>
-								    <button type="button" class="btn btn-danger btn-xs" @click="dropFoto">Удалить фото</button>
-						</template>	
-					</td>					
-					
-					<td><button type="button" class="btn btn-success" @click.prevent="saveEmployee">Сохранить</button></td>
+						<input type="radio" id="pers_salary" value="pers_salary" v-model="picked_salary" />
+						<label for="pers_salary">Персональный оклад:&nbsp;&nbsp;&nbsp;</label>
+						<input type="text" name="salary" v-model="salary" v-bind:disabled="salary_input_disabled" />
+						<br>
+						<input type="radio" id="stat_salary" value="stat_salary" v-model="picked_salary" />
+						<label for="stat_salary">Оклад согласно штатному расписанию</label>
+					</td>
 					</tr>
 					</table>
-                    </div>
-                </div>
-            </div>
-        </div>
-	<div class="row">
-    	<div class="col-md-10 col-md-offset-1">
-    	<div class="panel panel-default">
+				    </div>
+			</div>
+			</div>
+		</div>                    
+        
+        
+        <div class="row">
+      		<div class="col-md-10 col-md-offset-1">
+        		<div class="panel panel-default">
                     <div class="panel-heading">Загрузка фото</div>
                     <div class="panel-body">
 	    		        <form enctype="multipart/form-data">
-            				<input type="file" name="image" @change="changeFoto">
-            				<button type="button" @click="uploadFoto">Загрузить</button>
+            				<input type="file" accept="image/*" name="image" @change="changeFoto" />
+            				<button type="button" class="btn btn-primary" @click="uploadFoto">Загрузить</button>
             				<br /><img v-bind:src="src" />
         				</form>
 	    			</div>
 	    			</div>
-    	</div>
-	</div>
-
+    		</div>
+	   	</div>
+	
 	<div id="bigFoto" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -113,6 +145,7 @@
 		</div>
 	</div>
 </div>
+
 
 
 @endsection
@@ -163,22 +196,37 @@ new Vue({
  	 departments: [],
  	 err: null,
  	 image: null,
- 	 content: null
+ 	 content: null,
+ 	 salary: `{{ $empl["personal_salary"] }}`,
+ 	 picked_salary: `{{ $empl["picked_salary"] }}`,
     },
    computed: {
+     salary_input_disabled: function (){
+	     return this.picked_salary === "stat_salary" ? true : false;
+	 },
    	 has_foto: function(){
  	 	 return this.small_foto == ""? false: true;
 	 },
 	 small_foto_url: function(){
-	 	return "/storage/" + this.small_foto;
+	     return "/storage/" + this.small_foto;
 	 },
 	 foto_url: function(){
-	 	return "/storage/" + this.foto;
+	 	 return "/storage/" + this.foto;
 	 },
 	 src: function() {
-        if (this.content) {
+         if (this.content) {
             return this.content;
-	    }
+	     }
+	 },
+	 personal_salary: function(){
+           	if(this.picked_salary == "pers_salary")  		
+        	{
+				return this.salary;
+			}
+			else
+			{
+				return null;	
+			}
 	 }
    },
    methods:{
@@ -228,6 +276,8 @@ new Vue({
    	 },
 
   	saveEmployee: function(){
+  		    console.log(this.picked_salary);
+  		    console.log(this.salary);
   		 	axios.post('/setemployee', {
                 department_number: this.curr_depart.id,
                 post_id: this.curr_post.id,
@@ -238,13 +288,16 @@ new Vue({
                 employment_date: this.employment_date,
                 birthday: this.birthday,
                 phone: this.phone,
-                address: this.address
+                address: this.address,
+			    personal_salary: this.personal_salary,
         		}
         	)
         	.then(response => {
+        		this.err = null;
         	    this.status = response.data.status;
         	})
         	.catch(error => {
+        		this.status = null;
         	    this.err = error.response.data.errors;
         	})
 	},

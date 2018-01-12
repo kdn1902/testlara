@@ -107,14 +107,14 @@ class EmployeesTableSeeding extends Seeder
 			Employee::create(['lastname' => $this->family_mas[array_rand($this->family_mas)],
 						  'firstname' => $this->name_mas[array_rand($this->name_mas)],
 						  'otchestvo' => $this->otchestvo_mas[array_rand($this->otchestvo_mas)],
-						  'post_id' => 5,  //Это начальники отлелов 
+						  'post_id' => 5,  //Это начальники отделов 
 						  'department_number' => $result->department_number,
 						  'employment_date' => $faker->dateTimeBetween('-5 years'),
 						  'birthday' => $faker->dateTimeBetween('-55 years', '-20 years'),
 						  'phone' => $faker->phoneNumber,
 						  'address' => $faker->address]);
 		}
-        for ($i=1; $i < 1000; $i++)
+        for ($i=1; $i < 5000; $i++)
         {
 			Employee::create(['lastname' => $this->family_mas[array_rand($this->family_mas)],
 						  'firstname' => $this->name_mas[array_rand($this->name_mas)],

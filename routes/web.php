@@ -18,6 +18,9 @@ Route::get('/getemployee/{id}', 'EmployeesController@getemployee')->middleware('
 Route::get('/getemployees','AjaxController@getemployees');
 Route::get('/getdepartments','AjaxController@getdepartments');
 Route::get('/getposts','AjaxController@getposts');
+Route::get('/posts','PostsController@index')->middleware('auth');;
+Route::resource('/post','PostController')->middleware('auth');
+Route::get('/departments','DepartmentsController@index')->middleware('auth');
 Route::get('/about', function () {
     return view('welcome');
 });

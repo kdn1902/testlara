@@ -15,7 +15,7 @@ class AjaxController extends Controller
     public function getemployees()
     {
         $vuetable = new \App\EloquentVueTables();
-        $table_data = $vuetable->get(new \App\Employee, ['id', 'lastname', 'firstname', 'otchestvo', 'birthday']);
+        $table_data = $vuetable->get(new \App\Employee, ['id', 'lastname', 'firstname', 'otchestvo', 'birthday', 'small_foto']);
         return response()->json($table_data);
 	}
 	
@@ -53,6 +53,7 @@ class AjaxController extends Controller
     			'otchestvo' => 'required|alpha',
     			'phone' => 'required',
     			'address' => 'required',
+    			'personal_salary' => 'nullable|digits_between:2,5'
 			],
 			[
       		  	'lastname.required' => 'Фамилия не введена',
@@ -63,6 +64,7 @@ class AjaxController extends Controller
       		  	'otchestvo.alpha' => 'Отчество введено не верно',
       		  	'phone.required' => 'Номер телефона не введен',
       		  	'address.required' => 'Адрес не введен',
+      		  	'personal_salary.digits_between' => 'Не верно поле Зарплата'
  			]
 			);
     			$employee = \App\Employee::find($request->id);
@@ -76,8 +78,9 @@ class AjaxController extends Controller
     			$employee->birthday = $request->birthday;
     			$employee->phone = $request->phone;
     			$employee->address = $request->address;
+ 				$employee->personal_salary = $request->personal_salary;	
     			$employee->save();
-    		   	return response()->json(["errors" => "Данные изменены успешно"]);
+    		   	return response()->json(["status" => "Данные изменены успешно"]);
 	}
 	
 	public function upload(Request $request, \App\SimpleImage $image)

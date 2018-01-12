@@ -31,9 +31,8 @@
       <ul class="nav navbar-nav">
         <li><a href="/">Дерево сотрудников</a></li>
         <li><a href="/employees">Список сотрудников</a></li>
-        <li><a href="/">3</a></li>
-        <li><a href="/">4</a></li>
-        <li><a href="/">5</a></li>
+        <li><a href="/posts">Должности</a></li>
+        <li><a href="/departments">Отделы</a></li>
       </ul>
       <!-- Right Side Of Navbar -->
       <ul class="nav navbar-nav navbar-right">

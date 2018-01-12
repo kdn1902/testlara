@@ -32,7 +32,16 @@ class EmployeesController extends Controller
     	$depart = Employee::find($id)->department;
     	$empl["department_name"] = $depart->name;
     	$empl["department_number"] = $depart->department_number;
-    	$empl["status"] = "";
+    	$empl["status"] = null;
+    	if ($empl["personal_salary"] == null )
+    	{
+			$empl["personal_salary"] = $post->salary;
+			$empl["picked_salary"] = "stat_salary";
+		}
+		else
+		{
+			$empl["picked_salary"] = "pers_salary";
+		}
 		return view('index.employee',[ "empl" => $empl ]);
 	}
 

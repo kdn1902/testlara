@@ -12,7 +12,7 @@ Class EloquentVueTables
     $data = $model->select($fields);
     if (isset($query) && $query) {
 //     $data = $byColumn==1?$this->filterByColumn($data, $query):
-     $this->filter($data, $query, $fields, $datefields);
+     $data = $this->filter($data, $query, $fields, $datefields);
    }
    $count = $data->count();
    $data->limit($limit)
@@ -41,13 +41,16 @@ return $data;
 }
 */
 protected function filter($data, $query, $fields, $datefields) {
-  foreach ($fields as $index=>$field):
-    if( is_numeric($query) || (! in_array($field, $datefields)) )
-    {
-	    $method = $index?"orWhere":"where";
-    	$data->{$method}($field,'LIKE',"%{$query}%");
-    }
-  endforeach;
+  foreach ($fields as $index=>$field)
+  {
+  	 // если поиск по числу или поиск не в поле даты, то добавляем в запрос
+  	 // если строка и поле даты, то нет
+   	 if( is_numeric($query) || (! in_array($field, $datefields)) )
+     {
+            $method = $index?"orWhere":"where";
+    		$data->{$method}($field,'LIKE',"%{$query}%");
+     }
+  }
   return $data;
 }
 

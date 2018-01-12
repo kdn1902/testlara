@@ -26,6 +26,7 @@ class CreateEmployeesTable extends Migration
             $table->string('address',200);
             $table->string('foto',200)->nullable();
             $table->string('small_foto',200)->nullable();
+            $table->integer('personal_salary')->unsigned()->nullable();
             $table->timestamps();
         });
     }
