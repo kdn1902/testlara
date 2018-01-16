@@ -52,19 +52,16 @@
                         </div>
  
                         <div class="form-group">
-                            <label for="name">Название:</label>
-                            <input type="text" name="name" id="name" placeholder="Название должности" class="form-control"
-                                   v-model="post.name">
+                           <label for="name">Название:</label>
+                           <input type="text" name="name" id="name" placeholder="Название должности" class="form-control" v-model="post.name">
                         </div>
                         <div class="form-group">
                             <label for="salary">Оклад:</label>
-                            <input type="text" name="salary" id="salary" placeholder="Оклад" class="form-control"
-                                   v-model="post.salary">
+                            <input type="text" name="salary" id="salary" placeholder="Оклад" class="form-control" v-model="post.salary">
                         </div>
                         <div class="form-group">
                             <label for="priority">Приоритет:</label>
-                            <input type="text" name="priority" id="priority" placeholder="Приоритет" class="form-control"
-                                   v-model="post.priority">
+                            <input type="text" name="priority" id="priority" placeholder="Приоритет" class="form-control" v-model="post.priority">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -135,7 +132,7 @@
     	methods:{
     		initUpdatePost(index){
     			this.postserrors = null;
-    			this.update_post = this.posts[index];
+    			this.update_post = Object.assign({}, this.posts[index]);
     			$("#update_post_model").modal("show");				
 			},
     		initAddPost()

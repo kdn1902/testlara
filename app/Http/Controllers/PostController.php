@@ -37,13 +37,13 @@ class PostController extends Controller
     public function store(Request $request)
     {
        $this->validate($request, [
-            	'name'        => 'required|alpha',
+            	'name'        => 'required|alpha_spaces',
             	'salary' => 'required|numeric',
             	'priority' => 'required|integer'
         	],
          	[
          	    'name.required' => 'Название не введено',
-      		  	'name.alpha' => 'Название введено не верно',
+      		  	'name.alpha_spaces' => 'Название введено не верно',
       		  	'salary.required' => 'Оклад не введен',
       		  	'salary.numeric' => 'Оклад введен не верно',
       		  	'priority.required' => 'Приоритет не введен',
@@ -91,13 +91,13 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
             $this->validate($request, [
-            	'name'        => 'required|alpha',
+            	'name'        => 'required|alpha_spaces',
             	'salary' => 'required|numeric',
             	'priority' => 'required|integer'
         	],
          	[
          	    'name.required' => 'Название не введено',
-      		  	'name.alpha' => 'Название введено не верно',
+      		  	'name.alpha_spaces' => 'Название введено не верно',
       		  	'salary.required' => 'Оклад не введен',
       		  	'salary.numeric' => 'Оклад введен не верно',
       		  	'priority.required' => 'Приоритет не введен',

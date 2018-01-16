@@ -45,7 +45,7 @@ class EmployeesTableSeeding extends Seeder
 		}
 
 		//Директора департаментов
-		$results = DB::table('departments')->whereBetween('department_number', [10, 99])->whereIn('department_number', function($q)
+		$results = DB::table('departments')->whereBetween('department_number', [4, 7])->whereIn('department_number', function($q)
   		{
     			$q->select('department_parent')->from('departments');
 		})->get();
@@ -76,7 +76,7 @@ class EmployeesTableSeeding extends Seeder
 		}
 		
 		//Начальники отделов в середине иерархии
-		$results = DB::table('departments')->where('department_number', '>', 99)->whereIn('department_number', function($q)
+		$results = DB::table('departments')->where('department_number', '>', 7)->whereIn('department_number', function($q)
   		{
     			$q->select('department_parent')->from('departments');
 		})->get();

@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Validator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,8 +17,11 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Schema::defaultStringLength(191);
-    }
-
+        Validator::extend('alpha_spaces', function ($attribute, $value)
+        {
+            return preg_match('/^[\pL\s]+$/u', $value);
+	    });
+	}
     /**
      * Register any application services.
      *
