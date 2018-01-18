@@ -20,4 +20,5 @@ class Department extends Model
     	        ->leftJoin('departments as dept2', 'dept1.department_parent', '=', 'dept2.department_number')
         	    ->select('dept1.id','dept1.name','dept1.department_number', 'dept1.department_parent as department_parent_number', 'dept2.name as department_parent_name')->get();
 	}
+
 }

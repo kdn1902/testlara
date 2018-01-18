@@ -9,6 +9,7 @@ class MyFunctions {
 	private $opt;
 	private $pdo;*/
 	private $jsonstr;
+	private $emptyid;
 	
 	public function __construct()
 	{
@@ -21,6 +22,7 @@ class MyFunctions {
 	
 	public function showTree($pid)
 	{
+		$this->emptyid = 1 + DB::select( DB::raw("select max(id) as emptyid from employees"))[0]->emptyid;
 		$this->calcTree2($pid);
 		return $this->jsonstr;
 	}
@@ -60,14 +62,22 @@ class MyFunctions {
     {
 		$zpt = "";
     	$results = DB::select( DB::raw("select * from departments where department_parent=?"), [$pid] );
+
     	foreach($results as $row)
     	{
     		$count = DB::select(DB::raw("select count(*) as count from departments where department_parent=" . $row->department_number))[0]->count;
     		$row2 =	DB::select(DB::raw("select employees.id, employees.lastname, employees.firstname, employees.otchestvo, posts.id as post_id, posts.name as dolgnost from employees, posts where posts.id = employees.post_id and employees.department_number=? order by post_priority"),[$row->department_number]);
-/*    		$row2 =	DB::select(DB::raw("select employees.id, employees.lastname, employees.firstname, employees.otchestvo, posts.id as post_id, posts.name as dolgnost from employees, posts where posts.id = employees.post_id and employees.department_number=? order by post_id"),[$row->department_number]);*/
 
-    		$opened = ($row2[0]->post_id < 4) ? ", \"state\":{opened:true}" : "";
-			$this->jsonstr .= "{$zpt}{\"text\":\"{$row2[0]->lastname} {$row2[0]->firstname} {$row2[0]->otchestvo} - {$row->name} - {$row2[0]->dolgnost}\",\"id\":\"{$row2[0]->id}\",\"data\":{\"department_id\":\"{$row->department_number}\", \"post_id\":\"{$row2[0]->post_id}\"}{$opened}";
+			if(count($row2) > 0)
+			{
+	   			$opened = ($row2[0]->post_id < 4) ? ", \"state\":{opened:true}" : "";
+				$this->jsonstr .= "{$zpt}{\"text\":\"{$row2[0]->lastname} {$row2[0]->firstname} {$row2[0]->otchestvo} - {$row->name} - {$row2[0]->dolgnost}\",\"id\":\"{$row2[0]->id}\",\"data\":{\"department_id\":\"{$row->department_number}\", \"post_id\":\"{$row2[0]->post_id}\"}{$opened}";
+			}
+			else
+			{
+				$this->jsonstr .= "{$zpt}{\"text\":\"Нет сотрудников - {$row->name}\",\"id\":\"{$this->emptyid}\",\"data\":{\"department_id\":\"{$row->department_number}\"}";
+				$this->emptyid++;
+			}
 			
 			$zpt = ",";
 			if ($count > 0 || count($row2) > 1)

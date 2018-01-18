@@ -27,7 +27,7 @@
                     <table class="table table-bordered">
    					<thead>
 						<th>Фамилия</th><th>Имя</th><th>Отчество</th><th>Дата рождения</th>
-						<th>Номер телефона</th><th>Адрес</th><th>Фото</th></th>
+						<th>Номер телефона</th><th>Адрес</th><th>Фото</th>
 					</thead>
 					<tr>
 					<td @click.self = "is_lastname_view = ! is_lastname_view; ">

@@ -117,7 +117,7 @@
                 	id: '',
                     name: '',
                     department_number:'',
-                    parentdepartment_parent_number: '',
+                    department_parent_number: '',
                     department_parent_name: ''
                 },
                 deptserrors: null,
@@ -139,8 +139,8 @@
     		initAddDept()
             {
             	this.get_depts()
-            	this.dept.id="";
             	this.dept.name="";
+            	this.current_parent.id={};
                 this.deptserrors = null;
                 $("#add_dept_model").modal("show");
             },

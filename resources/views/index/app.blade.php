@@ -24,11 +24,12 @@
 		"plugins" : [ "dnd" ]
 	});
   $('#jstree').on("changed.jstree", function (e, data) {
+  	
 	  console.log(data.instance.get_node(data.selected[0]).id);
 	  console.log(data.instance.get_node(data.selected[0]).data.department_id);
 	  console.log(data.instance.get_node(data.selected[0]).data.post_id);
 	  console.log(data.instance.get_node(data.selected[0]).text);
-	  window.location = "/getemployee/" + data.instance.get_node(data.selected[0]).id;
+	  if (data.instance.get_node(data.selected[0]).data.post_id !== undefined) window.location = "/getemployee/" + data.instance.get_node(data.selected[0]).id;
     });
 </script>
 @endsection

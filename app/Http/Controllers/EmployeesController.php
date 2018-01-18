@@ -17,6 +17,10 @@ class EmployeesController extends Controller
 		return view('index.employees');
 	}
 
+	public function newemployee()
+	{
+		return view('index.newemployee');
+	}
 /**
 * 
 * @param undefined $id

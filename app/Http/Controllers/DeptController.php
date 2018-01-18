@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Department;
+use Illuminate\Support\Facades\DB;
 
 class DeptController extends Controller
 {
@@ -46,14 +47,14 @@ class DeptController extends Controller
       		  	'parent_number.required' => 'Родительский отдел не введен',
       		  	'parent_number.numeric' => 'Родительский отдел введен не верно'
         	]);
- 
+
         $dept = Department::create([
             'name' => $request->name,
             'department_parent' => $request->parent_number,
-            'department_number' => 9999999
+            'department_number' => 999999
         ]);
         $dept->department_number = $dept->id;
-        $dept->save;
+        $dept->save();
         
         return response()->json(['depts' => Department::get_departments()]);
     }
@@ -115,6 +116,6 @@ class DeptController extends Controller
     	{	
 			return response()->json(['errors' => ['message' =>'Есть сотрудники в этом отделе']])->setStatusCode(422);
 		}
-		//$dept->delete();
+		$dept->delete();
     }
 }
