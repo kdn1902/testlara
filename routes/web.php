@@ -27,7 +27,6 @@ Route::get('/about', function () {
     return view('welcome');
 });
 Route::post('/setemployee', 'AjaxController@setemployee')->middleware('auth');
-//Route::post('/newempl', 'AjaxController@newemployee')->middleware('auth');
 Route::post('/upload','AjaxController@upload')->middleware('auth');
 Route::post('/dropfoto','AjaxController@dropfoto')->middleware('auth');
 
