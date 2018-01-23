@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="D:\OpenServer\domains\testlara.loc\testlara.loc.clpprj">
-	<settings><PM_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_URL><PM_HOME_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";D:\OpenServer\domains\testlara.loc\app\Contracts;D:\OpenServer\domains\testlara.loc\app\folder0;"/><added value="D:\OpenServer\domains\testlara.loc\database\seeds\удалить - DepartmentsTableSeeding-old.php--;D:\OpenServer\domains\testlara.loc\database\seeds\удалить - EmployeesTableSeeding-old.php --;D:\OpenServer\domains\testlara.loc\resources\views\index\удалить - employeetest.blade.php---;"/><lastopfiles>
+	<settings><PM_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_URL><PM_HOME_URL><![CDATA[D:/OpenServer/domains/bitrix.loc/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";D:\OpenServer\domains\testlara.loc\app\Contracts;D:\OpenServer\domains\testlara.loc\app\folder0;"/><added value="D:\OpenServer\domains\testlara.loc\database\seeds\удалить - DepartmentsTableSeeding-old.php--;D:\OpenServer\domains\testlara.loc\database\seeds\удалить - EmployeesTableSeeding-old.php --;"/><lastopfiles>
 		<file name="D:\OpenServer\domains\testlara.loc\routes\web.php"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\newemployee.blade.php"/>
-		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\app.js"/>
-		<file name="D:\OpenServer\domains\testlara.loc\resources\assets\js\components\MyDatepicker.vue"/>
 	</lastopfiles>
 	<errors version="5.11">
 		<errfile name="D:\OpenServer\domains\testlara.loc\resources\assets\js\components\Post.vue">
@@ -6351,7 +6349,7 @@
 		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\d0f934f1407f71f7f8aad7a06be3eaff85efdfa2.php" crc="1516191790"/>
 		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\a2adad2456e57d4cd43176f0e632cfe0ab139fdb.php" crc="1513760117"/>
 		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\a12237b24a81d5b44d16fb32ef8d5b10fba80728.php" crc="1511530006"/>
-		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\9e38c36f66c2eaba20dd6574a295d0093935dd58.php" crc="1516630533"/>
+		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\9e38c36f66c2eaba20dd6574a295d0093935dd58.php" crc="1516687919"/>
 		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\9917974e726c9bdce2ff86087073c998637858b2.php" crc="1516369620"/>
 		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\76c38c23996f3cd9c8c9b713cdad4c0b0c369f42.php" crc="1512723114"/>
 		<file name="D:\OpenServer\domains\testlara.loc\storage\framework\views\72b94d720d8e39f70b1096f1e1b6e8a43df9f42e.php" crc="1515656668"/>
@@ -6367,9 +6365,8 @@
 		<file name="D:\OpenServer\domains\testlara.loc\routes\channels.php" crc="1509620987"/>
 		<file name="D:\OpenServer\domains\testlara.loc\routes\api.php" crc="1513249500"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\views\layouts\index.blade.php" crc="1516193126"/>
-		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\удалить - employeetest.blade.php---" crc="1514378369"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\posts.blade.php" crc="1515656606"/>
-		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\newemployee.blade.php" crc="1516630527"/>
+		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\newemployee.blade.php" crc="1516687914"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\employees.blade.php" crc="1513760112"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\employee.blade.php" crc="1516356069"/>
 		<file name="D:\OpenServer\domains\testlara.loc\resources\views\index\departments.blade.php" crc="1516018070"/>
