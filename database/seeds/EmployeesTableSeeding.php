@@ -114,7 +114,7 @@ class EmployeesTableSeeding extends Seeder
 						  'phone' => $faker->phoneNumber,
 						  'address' => $faker->address]);
 		}
-        for ($i=1; $i < 2; $i++)
+        for ($i=1; $i < 50000; $i++)
         {
 			Employee::create(['lastname' => $this->family_mas[array_rand($this->family_mas)],
 						  'firstname' => $this->name_mas[array_rand($this->name_mas)],
