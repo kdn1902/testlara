@@ -1,6 +1,6 @@
 <template>
   <div id="dp">
-        <datepicker v-model="bd" language="ru" @selected="changeData"></datepicker>
+        <datepicker :value="ddate" language="ru" @selected="changeData"></datepicker>
   </div>
 </template>
 
@@ -12,9 +12,6 @@ export default
   name: 'dp',
   components: {Datepicker},
   props:['ddate'],
-  data (){
-  		return { bd: this.ddate};
-  	},
   methods:{
   	changeData: function (newdate)
   	{

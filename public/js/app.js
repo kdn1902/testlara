@@ -46257,10 +46257,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   name: 'dp',
   components: { Datepicker: __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker___default.a },
   props: ['ddate'],
-  data: function data() {
-    return { bd: this.ddate };
-  },
-
   methods: {
     changeData: function changeData(newdate) {
       this.$emit('changedate', newdate.toLocaleFormat('%Y-%m-%d'));
@@ -46288,15 +46284,8 @@ var render = function() {
     { attrs: { id: "dp" } },
     [
       _c("datepicker", {
-        attrs: { language: "ru" },
-        on: { selected: _vm.changeData },
-        model: {
-          value: _vm.bd,
-          callback: function($$v) {
-            _vm.bd = $$v
-          },
-          expression: "bd"
-        }
+        attrs: { value: _vm.ddate, language: "ru" },
+        on: { selected: _vm.changeData }
       })
     ],
     1

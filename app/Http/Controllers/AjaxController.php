@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Validator;
 
 class AjaxController extends Controller
 {
@@ -39,12 +39,7 @@ class AjaxController extends Controller
         return response()->json(\App\Post::all());
 	}
 
-    /**
-	* 
-	* @param undefined $request
-	* 
-	* @return
-	*/
+
     public function setemployee(Request $request) 
     {
 	    	$this->validate($request, [
@@ -65,8 +60,8 @@ class AjaxController extends Controller
       		  	'phone.required' => 'Номер телефона не введен',
       		  	'address.required' => 'Адрес не введен',
       		  	'personal_salary.digits_between' => 'Не верно поле Зарплата'
- 			]
-			);
+ 			]);
+ 			
     			$employee = \App\Employee::find($request->id);
     			$employee->lastname = $request->lastname;
     			$employee->firstname = $request->firstname;

@@ -276,8 +276,6 @@ new Vue({
    	 },
 
   	saveEmployee: function(){
-  		    console.log(this.picked_salary);
-  		    console.log(this.salary);
   		 	axios.post('/setemployee', {
                 department_number: this.curr_depart.id,
                 post_id: this.curr_post.id,
@@ -320,7 +318,6 @@ new Vue({
 			axios.get('/getdepartments')
 			.then( response =>  {
   					   this.departments = response.data;
-  					   console.log(this.departments);
   			})
   			.catch(error => {
     				console.log(error);

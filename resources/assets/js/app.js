@@ -26,3 +26,4 @@ import {ServerTable, ClientTable, Event} from 'vue-tables-2';
 import axios from 'axios';
 
 Vue.use(ServerTable, {}, false, require('../../../node_modules/vue-tables-2/compiled/template.js')('server'))
+
