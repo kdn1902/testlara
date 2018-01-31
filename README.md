@@ -1,14 +1,14 @@
 # testlara
-Тестовое задание на php с использованием фреймворка laravel 5
-С клиентской стороны используется vue.js, bootstrap 3, jquery
-Установка:
+# РўРµСЃС‚РѕРІРѕРµ Р·Р°РґР°РЅРёРµ РЅР° php СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј С„СЂРµР№РјРІРѕСЂРєР° laravel 5
+РЎ РєР»РёРµРЅС‚СЃРєРѕР№ СЃС‚РѕСЂРѕРЅС‹ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ vue.js, bootstrap 3, jquery<br />
+РЈСЃС‚Р°РЅРѕРІРєР°:
 1) git clone https://github.com/kdn1902/testlara.git
 2) composer install
 3) npm install
 4) copy .env.example .env
 5) php artisan key:generate
-7) Создать базу данных и отредактировать .env
+7) РЎРѕР·РґР°С‚СЊ Р±Р°Р·Сѓ РґР°РЅРЅС‹С… Рё РѕС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ .env
 8) php artisan storage:link
 9) php artisan migrate
 10) php artisan db:seed
-11) сделать корневой каталог web сервер /public
+11) СЃРґРµР»Р°С‚СЊ РєРѕСЂРЅРµРІРѕР№ РєР°С‚Р°Р»РѕРі web СЃРµСЂРІРµСЂ /public
